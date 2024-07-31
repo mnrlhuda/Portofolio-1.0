@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #000000;  
+    --bg-color: #000000;
     --second-bg-color: #121212;
     --text-color: #fff;
     --main-color: #ff0000;
@@ -127,6 +127,8 @@ html::-webkit-scrollbar-thumb{
         border-radius: 0.5rem;
     }
 }
+
+/* Home */
 section{
     min-height: 100vh;
     padding: 5rem 9% 5rem;
@@ -301,7 +303,7 @@ span{
     background: var(--second-bg-color);
 }
 .heading{
-    padding-top: 24px;
+    padding-top: 26px;
     text-align: center;
     font-size: 4rem;
 }
@@ -575,9 +577,10 @@ span{
 }
 
 .education .content .tag h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: black;
+    margin-top: -10px;
 }
 
 .education .content .desc p {
@@ -622,17 +625,22 @@ span{
     }
 }
 
+/* Certificates */
+.certificates {
+    background: var(--bg-color);
+}
+
 
 /* Contact */
 .contact {
-    background: var(--bg-color);
+    background: var(--second-bg-color);
 }
 .contact .container {
     padding: 2rem;
     width: 90%;
     margin: auto;
     margin-top: 2rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .contact .container .row{
     display: grid;
@@ -656,6 +664,9 @@ span{
     color: var(--main-color);
     margin-right: 15px;
     font-size: 25px;
+}
+.contact .contact-left p a {
+    color: var(--text-color);
 }
 .contact .contact-right form {
     width: 100%;
