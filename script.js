@@ -29,20 +29,3 @@ document.addEventListener('DOMContentLoaded', function() {
     AOS.init();
     updateAOS();
 });
-
-window.addEventListener('resize', updateAOS);
-
-function updateAOS() {
-    var elements = document.querySelectorAll('.animated-element');
-    elements.forEach(function(element) {
-        if (window.innerWidth <= 768) {
-            element.setAttribute('data-aos', 'fade-left');
-            element.style.display = 'block'; // Tampilkan elemen di mobile
-        } else {
-            element.setAttribute('data-aos', 'fade-right');
-            element.style.display = 'block'; // Tampilkan elemen di desktop
-        }
-    });
-    // Reinitialize AOS to apply the new settings
-    AOS.refresh();
-}
