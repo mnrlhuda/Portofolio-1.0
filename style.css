@@ -634,14 +634,14 @@ span{
 
 /* Contact */
 .contact {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .contact .container {
     padding: 2rem;
     width: 90%;
     margin: auto;
     margin-top: 2rem;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
 }
 .contact .container .row{
     display: grid;
