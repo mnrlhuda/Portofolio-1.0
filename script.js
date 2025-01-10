@@ -42,3 +42,16 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     // Reset form setelah pengiriman
     this.reset();
 });
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault(); // Mencegah perilaku default (mengubah URL)
+        const targetId = this.getAttribute('href').substring(1); // Ambil ID tujuan
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth', // Gulir halus
+                block: 'start'
+            });
+        }
+    });
+});
