@@ -29,3 +29,16 @@ document.addEventListener('DOMContentLoaded', function() {
     AOS.init();
     updateAOS();
 });
+
+function handleClick() {
+    alert('CV download is currently unavailable.');
+    // Mengatur lokasi ke id contact
+    window.location.hash = "#contact";
+}
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Mencegah pengiriman formulir secara default
+    alert("Your message has been sent successfully!");
+    // Reset form setelah pengiriman
+    this.reset();
+});
